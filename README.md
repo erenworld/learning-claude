@@ -97,3 +97,43 @@ Vague prompts can still be useful when you're exploring and can afford to course
 ## 6. Provide rich content
 
 Use `@` to reference files, paste screenshots or images, or pipe data directly. Give URLs when relevant context lives outside the codebase.
+
+## 7. Only ask for the first step.
+
+## 8. Use /rewind and /clear when Claude goes in the wrong direction.
+
+## 9. Use the preview 
+
+## 10. Don’t fix bugs yourself. 
+
+When Claude introduces a bug and fails to detect it, it’s tempting to quickly patch it yourself. But don’t do it: Claude probably missed some important controls or guidelines.
+
+## 11. Run /simplify and /review before doing a human review.
+
+Use /simplify to get rid of the over-engineering Claude tends to add (extra abstractions, unnecessary generics, speculative error handling). Use /review to let Claude catch its own issues, then ask it to fix them.
+
+## 12. Do a retro at the end of each session. 
+
+We regularly ask Claude “What did you learn during this session?” and save the output.
+
+The hard part is to add each learning to the right place: general project concepts go in CLAUDE.md, good practices and coding conventions go in rules, technical abilities in Skill files, project details in Markdown docs, and architectural choices in ADRs. And don’t forget to interlink them so Claude can find the right instructions next time.
+
+## 13. Use ! to execute shell commands. 
+
+If you need to launch tests or typecheck, it’s faster to type the CLI command than to ask Claude to do it.
+
+## 14. Keep CLAUDE.md under 200 lines. 
+
+Your CLAUDE.md should contain business context and domain knowledge Claude doesn’t have (e.g. your data model, naming conventions, internal rules). Make it short and focused.
+
+## 15. Create skills for repetitive workflows.
+
+If you find yourself giving Claude the same instructions more than once, create a skill for it. 
+
+## 16. Use the Context7 plugin instead of letting Claude search online docs.
+
+## 17. Use rtk to reduce the number of tokens used by Claude.
+
+## 18. Use the Snyk MCP Server to let Claude check for code security and dependency vulnerabilities.
+
+
