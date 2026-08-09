@@ -1,7 +1,5 @@
 # Best Practices
 
-A practical guide to working effectively with Claude Code, with a quiz at the end to test your understanding.
-
 
 ## 1. The context window is your most important resource
 
